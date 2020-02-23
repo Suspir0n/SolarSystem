@@ -1,20 +1,219 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding" color="light">
+  <ion-row>
+    <ion-col size="3">
+      <input class="planet2" id="pluto" name="planet" type="radio">
+      <img src="./../../assets/icons-pluto.png" />
+      <p></p>
+      <input class="planet1" id="neptune" name="planet" type="radio">
+      <img src="./../../assets/icon-neptune.png" />
+      <p></p>
+      <input class="planet9" id="uranus" name="planet" type="radio">
+      <img src="./../../assets/icons-uranus.png" />
+      <p></p>
+      <input class="planet8" id="saturn" name="planet" type="radio">
+      <img src="./../../assets/icons-saturn.png" />
+      <p></p>
+      <input class="planet7" id="jupiter" name="planet" type="radio">
+      <img src="./../../assets/icons-jupiter.png" />
+      <p></p>
+      <input class="planet6" id="mars" name="planet" type="radio">
+      <img src="./../../assets/icons-mars.png" />
+      <p></p>
+      <input class="planet5" id="earth" name="planet" type="radio">
+      <img src="./../../assets/icons-earth.png" />
+      <p></p>
+      <input class="planet4" id="venus" name="planet" type="radio">
+      <img src="./../../assets/icons-venus.png" />
+      <p></p>
+      <input class="planet3" id="mercury" name="planet" type="radio">
+      <img src="./../../assets/icons-mercury.png" />
+    </ion-col>
+    <ion-col size="3">
+      <ion-label>PLUTO</ion-label><br>
+      <ion-label>39.5<b> AU</b></ion-label><br>
+      <p></p>
+      <br>
+      <ion-label>NEPTUNE</ion-label><br>
+      <ion-label>30.06<b> AU</b></ion-label><br>
+      <p></p>
+      <br>
+      <ion-label>URANUS</ion-label><br>
+      <ion-label>19.18<b> AU</b></ion-label><br>
+      <p></p>
+      <ion-label>SATURN</ion-label><br>
+      <ion-label>9.539<b> AU</b></ion-label><br>
+      <p></p>
+      <br>
+      <ion-label>JUPITER</ion-label><br>
+      <ion-label>5.203<b> AU</b></ion-label><br>
+      <p></p>
+      <br>
+      <ion-label>MARS</ion-label><br>
+      <ion-label>1.524<b> AU</b></ion-label><br>
+      <p></p>
+      <br>
+      <ion-label>EARTH</ion-label><br>
+      <ion-label>1<b> AU</b></ion-label><br>
+      <p></p>
+      <br>
+      <ion-label>VENUS</ion-label><br>
+      <ion-label>0.723<b> AU</b></ion-label><br>
+      <p></p>
+      <br>
+      <ion-label>MERCURY</ion-label><br>
+      <ion-label>0.39<b> AU</b></ion-label><br>
+    </ion-col>
+    <ion-col size="6">
+      <ion-slides [options]="slideOpts">
+        <ion-slide>
+          <img src="./../../assets/pluto.gif" />
+          <br>
+          <ion-label class="lbl1">DWARF PLANET</ion-label>
+          <h2>PLUTO</h2>
+          <ion-label class="lbl1">39.5<b> AU</b></ion-label>
+          <p>PLUTO, ONCE CONSIDERED THE NINTH AND MOST DISTANT PLANET FROM THE SUN, IS NOW THE LARGEST KNOWN DAWRF
+            PLANET IN
+            THE SOLAR SYSTEM.</p>
+          <ion-button class="btnColor1" fill="clear" (click)="openPluto()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+        <ion-slide>
+          <img src="./../../assets/neptune.gif" />
+          <br>
+          <ion-label class="lbl2">PLANET</ion-label>
+          <h2>NEPTUNE</h2>
+          <ion-label class="lbl2">30.06<b> AU</b></ion-label>
+          <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET
+            DOLORE
+            MAGNA ALIQUA. UT ENIM AD MINIM VENIAM.</p>
+          <ion-button class="btnColor2" fill="clear" (click)="openNeptune()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        <ion-slide>
+          <img src="./../../assets/urano.gif" />
+          <br>
+          <ion-label class="lbl3">PLANET</ion-label>
+          <h2>URANUS</h2>
+          <ion-label class="lbl3">19.18<b> AU</b></ion-label>
+          <p>THE FIRST PLANET TO BE DISCOVERED BY SCIENTISTIS. THE PLANET IS NOTABLE FOR ITS DRAMATIC TILT. WHICH CAUSES
+            ITS
+            AXIS TO POINT NEARLY DIRECTLY AT THE SUN.</p>
+          <ion-button class="btnColor3" fill="clear" (click)="openUranus()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="./../../assets/saturn.gif" />
+          <br>
+          <ion-label class="lbl4">PLANET</ion-label>
+          <h2>SATURN</h2>
+          <ion-label class="lbl4">9.539<b> AU</b></ion-label>
+          <p>SATURN IS THE SIXTH PLANET FROM THE SUN AND THE SECOND LARGEST PLANET IN THE SOLAR SYSTEM. SATURN WAS THE
+            ROMAN
+            NAME FOR CRONUS, THE LORD OF THE TITANS.</p>
+          <ion-button class="btnColor4" fill="clear" (click)="openSaturn()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="./../../assets/jupiter.gif" />
+          <br>
+          <ion-label class="lbl5">PLANET</ion-label>
+          <h2>JUPITER</h2>
+          <ion-label class="lbl5">5.203<b> AU</b></ion-label>
+          <p>JUPITER IS THE LARGEST PLANET IN THE SOLAR SYSTEM. FITTINGLY, IT WAS NAMED AFTER THE KING OF THE GODS IN
+            ROMAN MYTHOLOGY.</p>
+          <ion-button class="btnColor5" fill="clear" (click)="openJupiter()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="./../../assets/mars.gif" />
+          <br>
+          <ion-label class="lbl6">PLANET</ion-label>
+          <h2>MARS</h2>
+          <ion-label class="lbl6">1.524<b> AU</b></ion-label>
+          <p>FOURTH PLANET FROM THE SUN AND THE SECOND SMALLEST PLANET IN THE SOLAR SYSTEM. NAMED AFTER THE ROMAN GOD OF
+            WAR OFTEN DESCRIBED AS THE "RED PLANET".</p>
+          <ion-button class="btnColor6" fill="clear" (click)="openMars()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="./../../assets/earth.gif" />
+          <br>
+          <ion-label class="lbl7">PLANET</ion-label>
+          <h2>EARTH</h2>
+          <ion-label class="lbl7">1<b> AU</b></ion-label>
+          <p>EARTH, OUR HOME. IT IS THE ONLY PLANET KNOWN TO HAVE AN ATMOSPHERE CONTAINING FREE OXYGEN, OCEANS OF LIQUID
+            WATER ON ITS SURFACE, AND, OF COURSE, LIFE.</p>
+          <ion-button class="btnColor7" fill="clear" (click)="openEarth()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="./../../assets/venus.gif" />
+          <br>
+          <ion-label class="lbl8">PLANET</ion-label>
+          <h2>VENUS</h2>
+          <ion-label class="lbl8">0.723<b> AU</b></ion-label>
+          <p>NAMED FOR THE ROMAN GODDSESS OF LOVE AND BEAUTY. IN ANCIENT TIMES, VENUS WAS OFTEN THOUGHT TO BE TWO
+            DIFFERENT STARS, THE EVENING STAR AND THE MORNING STAR.</p>
+          <ion-button class="btnColor8" fill="clear" (click)="openVenus()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="./../../assets/mercury.gif" />
+          <br>
+          <ion-label class="lbl9">PLANET</ion-label>
+          <h2>MERCURY</h2>
+          <ion-label class="lbl9">0.39<b> AU</b></ion-label>
+          <p>THE CLOSEST PLANET TO THE SSUN. IT CIRCLES THE SU FASTER THAN ALL THE OTHER PLANETS, WHICH IS WHY ROMANS
+            NAMED IT AFTER THEIR SWIFT-FOOTED MESSENGER GOD.</p>
+          <ion-button class="btnColor9" fill="clear" (click)="openMercury()"><u>READ MORE</u></ion-button>
+          <div>
+            <ion-icon name="arrow-up"></ion-icon><br>
+            Role<br>
+            <ion-icon name="arrow-down"></ion-icon>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
 </ion-content>
+
